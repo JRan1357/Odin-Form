@@ -68,7 +68,9 @@ form{
 fieldset > p {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+    align-items: flex-end;
+
 }
 
 p > input{
@@ -77,7 +79,7 @@ p > input{
 
     box-shadow: 5px 5px 5px inset black;
 
-    max-width: 60%;;
+    max-width: 80%;;
 
     padding: 3px;
     padding-left: 5px;
@@ -141,4 +143,18 @@ svg {
     width: 35%;
     height: 100vh;
     
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: right;
+}
+
+#subButton{
+    border-radius: 10px;
+    padding: 5px;
+
+    font-family: 'jetbrains';
+
+    margin-left: auto;
 }
