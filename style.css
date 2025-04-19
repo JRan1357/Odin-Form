@@ -7,10 +7,9 @@
 
 /* VARIABLES */
 :root{
-    --form-color1: rgba(173, 0, 226, 0.5);
-    --form-color2: rgb(82, 0, 85);
+    --form-color1:  rgb(53, 0, 54);
+    --form-color2: rgba(138, 1, 192, 0.5);
 }
-
 
 /* END OF VARIABLES */
 
@@ -42,30 +41,27 @@ body {
 
     color: white;
     font-family: 'jetbrains';
-
-    
 }
 
 form{
-    border: outset 4px rgb(31, 0, 44);
-    border-radius: 10px;
+
 
     height: 35%;
 
-    background-image: linear-gradient(to bottom, var(--form-color1), var(--form-color2));
+    background-image: radial-gradient( var(--form-color1), var(--form-color2));
+
     background-size: cover;
 
     margin-right: 5%;
 
-    box-shadow: inset 20px 20px 200px rgb(0, 0, 0);
-}
+    box-shadow:  0 0 30px 20px var(--form-color2);
 
+    z-index: 100;
+}
 
 fieldset{
     border: none;
 }
-
-
 
 /* SVG container */
 svg {

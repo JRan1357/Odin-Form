@@ -14,17 +14,17 @@
                 }
 
                 // Generate 50 circles with random sizes, colors, and animations
-                for (let i = 0; i < 25; i++) {
+                for (let i = 0; i < 40; i++) {
                     const radius = getRandomInt(2, 6); // Random radius between 2px and 8px
                     const xPosition = getRandomInt(0, 100); // Random x position (percentage)
-                    const animationDelay = getRandomInt(0, 5); // Random delay for animation
+                    const animationDelay = getRandomInt(0, 30); // Random delay for animation
                     const baseDuration = 10 - radius; // Smaller radius = slower circle (animation duration)
-                    const animationDuration = baseDuration * 8; // Slow down all by 25%
+                    const animationDuration = baseDuration * 8; // Slow down all by 8x
 
                     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 
                     circle.setAttribute("cx", `${xPosition}%`); // Random x position
-                    circle.setAttribute("cy", "-50"); // Start position off the screen
+                    circle.setAttribute("cy", "-10"); // Start position off the screen
                     circle.setAttribute("r", radius); // Random radius
                     circle.setAttribute("fill", getRandomColor()); // Random color
 
