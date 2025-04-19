@@ -7,9 +7,6 @@
 
 /* VARIABLES */
 :root{
-    --left-color1: rgb(255, 255, 255, 0);
-    --left-color2: rgb(0, 0, 0, 1);
-
     --form-color1: rgba(173, 0, 226, 0.5);
     --form-color2: rgb(82, 0, 85);
 }
@@ -50,13 +47,17 @@ body {
 }
 
 form{
-    border: 2px solid rgb(64, 21, 82);
+    border: outset 4px rgb(31, 0, 44);
     border-radius: 10px;
 
     height: 35%;
 
     background-image: linear-gradient(to bottom, var(--form-color1), var(--form-color2));
     background-size: cover;
+
+    margin-right: 5%;
+
+    box-shadow: inset 20px 20px 200px rgb(0, 0, 0);
 }
 
 
@@ -104,8 +105,5 @@ svg {
 
     width: 35%;
     height: 100vh;
-
-    background-image: linear-gradient(to bottom, var(--left-color1), var(--left-color2));
-    background-size: cover;
     
 }
