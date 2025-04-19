@@ -37,12 +37,16 @@
         background-position: right center;
    }
 
-   fieldset>p {
+   fieldset>p{
        display: flex !important;
        flex-direction: column !important;
 
        align-items: flex-start !important;
 
+   }
+
+   p>input{
+    box-shadow: none !important;
    }
 }
 
