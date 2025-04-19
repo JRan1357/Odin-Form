@@ -1,42 +1,111 @@
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #18910054;
-            /* Light background for contrast */
+:root > * {
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}
 
-            display: flex;
-            
-        }
 
-        /* SVG container */
-        svg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+/* VARIABLES */
+:root{
+    --left-color1: rgb(255, 255, 255, 0);
+    --left-color2: rgb(0, 0, 0, 1);
 
-        /* Circle style */
-        .falling-circle {
-            animation: fall 10s infinite linear;
-            filter: blur(4px);
-            /* Apply a blur effect */
-        }
+    --form-color1: rgba(173, 0, 226, 0.5);
+    --form-color2: rgb(82, 0, 85);
+}
 
-        /* Keyframes for the falling animation */
-        @keyframes fall {
-            0% {
-                transform: translateY(-50px);
-                /* Start above the screen */
-            }
 
-            100% {
-                transform: translateY(100vh);
-                /* Move to the bottom of the screen */
-            }
-        }
+/* END OF VARIABLES */
 
-        #leftSide{
-            width: 50%
-        }
+
+/* import font */
+@font-face {
+    font-family: 'jetbrains';
+    src: url("assets/fonts/JetBrainsMono-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    overflow: hidden;
+    background-color: #18910054;
+    /* Light background for contrast */
+
+    
+
+    height: 100vh;
+
+    background-image: url("assets/imgs/backgroundImage.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    color: white;
+    font-family: 'jetbrains';
+
+    
+}
+
+form{
+    border: 2px solid rgb(64, 21, 82);
+    border-radius: 10px;
+
+    height: 35%;
+
+    background-image: linear-gradient(to bottom, var(--form-color1), var(--form-color2));
+    background-size: cover;
+}
+
+
+fieldset{
+    border: none;
+}
+
+
+
+/* SVG container */
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+/* Circle style */
+.falling-circle {
+    animation: fall 10s infinite linear;
+    filter: blur(4px);
+    /* Apply a blur effect */
+}
+
+/* Keyframes for the falling animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-50px);
+        /* Start above the screen */
+    }
+
+    100% {
+        transform: translateY(100vh);
+        /* Move to the bottom of the screen */
+    }
+}
+
+#rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35%;
+    height: 100vh;
+
+    background-image: linear-gradient(to bottom, var(--left-color1), var(--left-color2));
+    background-size: cover;
+    
+}
