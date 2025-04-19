@@ -23,7 +23,7 @@
                     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 
                     circle.setAttribute("cx", `${xPosition}%`); // Random x position
-                    circle.setAttribute("cy", "-9"); // Start position off the screen
+                    circle.setAttribute("cy", "-12"); // Start position off the screen
                     circle.setAttribute("r", radius); // Random radius
                     circle.setAttribute("fill", getRandomColor()); // Random color
 
