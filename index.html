@@ -10,6 +10,10 @@
 <body>
     <div id="leftSide">
         <div id="bannerText"><h1>SOME TEXT</h1></div>
+            <!-- SVG container -->
+            <svg xmlns="http://www.w3.org/2000/svg" id="svgCanvas">
+                <!-- Circles will be added dynamically with JavaScript -->
+            </svg>
     </div>
     <div id="rightSide">
         <form action="null" method="post">
@@ -33,6 +37,8 @@
                 
                 <label for="passwordConfirm">Confirm Password</label>
                 <input type="password" name="confirmPassword">
+                
+                <button>Submit</button>
             </fieldset>
         </form>
     </div>

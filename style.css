@@ -1,3 +1,42 @@
-body{
-    background-color: rgb(255, 255, 255);
-}
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #18910054;
+            /* Light background for contrast */
+
+            display: flex;
+            
+        }
+
+        /* SVG container */
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Circle style */
+        .falling-circle {
+            animation: fall 10s infinite linear;
+            filter: blur(4px);
+            /* Apply a blur effect */
+        }
+
+        /* Keyframes for the falling animation */
+        @keyframes fall {
+            0% {
+                transform: translateY(-50px);
+                /* Start above the screen */
+            }
+
+            100% {
+                transform: translateY(100vh);
+                /* Move to the bottom of the screen */
+            }
+        }
+
+        #leftSide{
+            width: 50%
+        }
