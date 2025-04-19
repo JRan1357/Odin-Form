@@ -26,12 +26,18 @@
 }
 
 @media (max-width: 600px){
-    
+    #body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 body {
     display: flex;
-    justify-content: space-between;
+
+    justify-content: flex-end;
+    align-items: flex-end;
 
     margin: 0;
     overflow: hidden;
@@ -165,7 +171,7 @@ nav>ul>li{
     }
 }
 
-#rightSide{
+#main{
     display: flex;
     justify-content: center;
     align-items: center;
