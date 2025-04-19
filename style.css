@@ -31,7 +31,7 @@ body {
 
     margin: 0;
     overflow: hidden;
-    background-color: #18910054;
+    background-color: #00000054;
     /* Light background for contrast */
 
     
@@ -157,4 +157,6 @@ svg {
     font-family: 'jetbrains';
 
     margin-left: auto;
+
+    background-image: linear-gradient(var(--input-color1), var(--input-color2));
 }

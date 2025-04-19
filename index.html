@@ -20,7 +20,7 @@
 
     </div>
     <div id="rightSide">
-        <form action="null" method="post">
+        <form action="null" method="post" onsubmit="event.preventDefault();alert('this isn\'t a real form you silly goose!')"">
             <fieldset>
                 <legend>Sign up form</legend>
         
@@ -41,7 +41,7 @@
         
                 <p>
                     <label for="phone">Phone</label>
-                    <input type="number" id="phone" name="phone">
+                    <input type="text" id="phone" name="phone" placeholder="xxxx-xxx-xxx">
                 </p>
         
                 <p>
