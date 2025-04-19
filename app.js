@@ -14,7 +14,7 @@
                 }
 
                 // Generate 50 circles with random sizes, colors, and animations
-                for (let i = 0; i < 100; i++) {
+                for (let i = 0; i < 200; i++) {
                     const radius = getRandomInt(1, 8); // Random radius between 2px and 8px
                     const xPosition = getRandomInt(0, 100); // Random x position (percentage)
                     const animationDelay = getRandomInt(0, 30); // Random delay for animation
