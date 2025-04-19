@@ -25,6 +25,10 @@
     font-style: normal;
 }
 
+@media (max-width: 600px){
+    
+}
+
 body {
     display: flex;
     justify-content: space-between;
@@ -104,6 +108,11 @@ legend{
     display: none;
 }
 
+a{
+    color: rgb(255, 255, 255);
+    font-family: 'jetbrains';
+}
+
 /* SVG container */
 svg {
     position: absolute;
@@ -114,6 +123,27 @@ svg {
 
     pointer-events: none;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,1));
+}
+
+nav>ul>li{
+    list-style: none;
+}
+
 
 /* Circle style */
 .falling-circle {
