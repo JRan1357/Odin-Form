@@ -42,14 +42,25 @@ for (let i = 0; i < 75; i++) {
 
 // Form Stuff
 
-const phoneInput = document.getElementById('#phone');
+// string slicer for phone number
+function stringSlice(string, index) {
+    return string.slice(0, index) + '-' + string.slice(index);
+}
+
+const phoneInput = document.getElementById('phone');
 
 phoneInput.addEventListener('input', (e) => {
     console.log("event listener fired")
     let value = e.target.value.replace(/[^0-9]/g, '');
+    console.log('value.length: ', value.length)
 
+    // 4th and 8th char will be a dash
     if (value.length > 4) {
-        value = value.slice(0, 4) + '-' + value.slice(4);
+        value = stringSlice(value, 4);
+    }
+
+    if (value.length > 8 ){
+        value = stringSlice(value, 8);        
     }
     e.target.value = value;
 })

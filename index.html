@@ -19,37 +19,45 @@
                 <legend>Sign up form</legend>
         
                 <p>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" required>
                 </p>
         
                 <p>
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" required>
                 </p>
         
                 <p>
-                    <label for="email" type="email">E-Mail</label>
-                    <input type="email" id="email" name="email">
+                    <label for="email" type="email">E-Mail*</label>
+                    <input type="email" id="email" name="email" required>
                 </p>
         
                 <p>
                     <label for="phone">Phone</label>
-                    <input type="text" id="phone" name="phone" placeholder="xxxx-xxx-xxx">
+                    <input type="text" id="phone" name="phone" maxlength="12" placeholder="xxxx-xxx-xxx">
                 </p>
         
                 <p>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required>
                 </p>
         
                 <p>
-                    <label for="passwordConfirm">Confirm</label>
-                    <input type="password" name="confirmPassword">
+                    <label for="passwordConfirm">Confirm*</label>
+                    <input type="password" name="confirmPassword" required>
+                </p>
+                <p>
+                    <label for="terms">
+                        <input type="radio">
+                        <select name="agree" id="agree">Agree</select>
+                        <select name="decline" id="decline"></select>
+                    </label>
+                    
                 </p>
         
                 <p id="buttonContainer">
-                    <button id="subButton">Create Account</button>
+                    <button id="subButton">Create Account &#8594</button>
                 </p>
             </fieldset>
         </form>
