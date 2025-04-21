@@ -47,8 +47,9 @@ function stringSlice(string, index) {
     return string.slice(0, index) + '-' + string.slice(index);
 }
 
-const phoneInput = document.getElementById('phone');
 
+// places dashes in phone number input
+const phoneInput = document.getElementById('phone');
 phoneInput.addEventListener('input', (e) => {
     console.log("event listener fired")
     let value = e.target.value.replace(/[^0-9]/g, '');
@@ -65,13 +66,22 @@ phoneInput.addEventListener('input', (e) => {
     e.target.value = value;
 })
 
+
+
 // password check
 
-function passwordCheck() {
+function formCheck() {
+    console.log("checking form");
 
-    const password = document.getElementById("password");
-    password.addEventListener('submit', (e) => {
-        const password = document.get
+
+    const form = document.getElementById("form");
+    form.addEventListener('submit', (e) => {
+        const password = document.getElementById("password");
+        const confirmPassword = docuemnt.getElementById("confirmPassword");
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match &#128169 ")
+        }
     })
     
 }

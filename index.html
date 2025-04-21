@@ -14,7 +14,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" id="svgCanvas">
             <!-- Circles will be addded dynamically with JavaScript -->
         </svg>
-        <form action="null" method="post" onsubmit="formCheck(); event.preventDefault();alert('this isn\'t a real form you silly goose!')"">
+        <form action="null" method="post" id=form onsubmit="formCheck(); event.preventDefault();alert('this isn\'t a real form you silly goose!')"">
             <fieldset>
                 <legend>Sign up form</legend>
         
@@ -44,8 +44,8 @@
                 </p>
         
                 <p>
-                    <label for="passwordConfirm">Confirm *</label>
-                    <input type="password" id="password" name="confirmPassword" required>
+                    <label for="confirmPassword">Confirm *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
                 </p>
                 <p>
                     <a id="termsLink" href="terms.html" target="_blank">Terms and Conditions</a>
