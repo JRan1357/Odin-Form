@@ -64,3 +64,7 @@ phoneInput.addEventListener('input', (e) => {
     }
     e.target.value = value;
 })
+
+// password check
+
+const password = doc
