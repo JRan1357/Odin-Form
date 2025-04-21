@@ -64,3 +64,10 @@ phoneInput.addEventListener('input', (e) => {
     }
     e.target.value = value;
 })
+
+
+
+// open terms
+function openTerms() {
+    alert("poop");
+}

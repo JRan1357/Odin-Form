@@ -19,17 +19,17 @@
                 <legend>Sign up form</legend>
         
                 <p>
-                    <label for="firstName">First Name*</label>
+                    <label for="firstName">First Name *</label>
                     <input type="text" id="firstName" name="firstName" required>
                 </p>
         
                 <p>
-                    <label for="lastName">Last Name*</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
                 </p>
         
                 <p>
-                    <label for="email" type="email">E-Mail*</label>
+                    <label for="email" type="email">E-Mail *</label>
                     <input type="email" id="email" name="email" required>
                 </p>
         
@@ -39,25 +39,24 @@
                 </p>
         
                 <p>
-                    <label for="password">Password*</label>
+                    <label for="password">Password *</label>
                     <input type="password" id="password" name="password" required>
                 </p>
         
                 <p>
-                    <label for="passwordConfirm">Confirm*</label>
+                    <label for="passwordConfirm">Confirm *</label>
                     <input type="password" name="confirmPassword" required>
                 </p>
                 <p>
+                    <a id="termsLink" onclick="openTerms()">Terms and Conditions</a>
                     <label for="terms">
-                        <input type="radio">
-                        <select name="agree" id="agree">Agree</select>
-                        <select name="decline" id="decline"></select>
+                        <input type="radio">Agree
+                        <input type="radio">Decline
                     </label>
-                    
                 </p>
         
                 <p id="buttonContainer">
-                    <button id="subButton">Create Account &#8594</button>
+                    <button id="subButton">Create Account</button>
                 </p>
             </fieldset>
         </form>
