@@ -67,4 +67,11 @@ phoneInput.addEventListener('input', (e) => {
 
 // password check
 
-const password = doc
+function passwordCheck() {
+
+    const password = document.getElementById("password");
+    password.addEventListener('submit', (e) => {
+        const password = document.get
+    })
+    
+}
