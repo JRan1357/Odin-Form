@@ -78,14 +78,14 @@ function hasSpecialCharacter(password) {
 function formCheck() {
     console.log("checking form");
 
-    const password = document.getElementById("password");
-    const confirmPassword = document.getElementById("confirmPassword");
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
 
-    console.log(password);
-    console.log(confirmPassword);
+    console.log(password.value);
+    console.log(confirmPassword.value);
 
-    if (password !== confirmPassword) {
-        alert("Passwords do not match &#128169 ")
+    if (password!== confirmPassword) {
+        alert("Passwords do not match")
     }
 
     if (!hasSpecialCharacter(password)) {
