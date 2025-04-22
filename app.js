@@ -95,3 +95,11 @@ function formCheck() {
     }
     }
     
+
+// Terms check
+    
+termsDecline = document.getElementById("decline");
+
+termsDecline.addEventListener("input", () => {
+    alert("You cannot proceed without accepting the terms.")
+})

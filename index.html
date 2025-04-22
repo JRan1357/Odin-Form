@@ -14,7 +14,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" id="svgCanvas">
             <!-- Circles will be addded dynamically with JavaScript -->
         </svg>
-        <form action="null" method="post" id=form onsubmit="formCheck(); event.preventDefault()">
+        <form action="null" method="post" id=form onsubmit="formCheck(); event.preventDefault();alert('This isn\'t a real form you silly goose!')">
             <fieldset>
                 <legend>Sign up form</legend>
         
@@ -49,10 +49,15 @@
                 </p>
                 <p>
                     <a id="termsLink" href="terms.html" target="_blank">Terms and Conditions</a>
-                    <label for="terms">
-                        <input type="radio">Agree
-                        <input type="radio">Decline
-                    </label>
+
+                    <span>
+                        <label for="terms">
+                            <input type="radio" name="terms" required>Agree*
+                        </label>
+                        <label>
+                            <input type="radio" name="terms" id="decline">Decline
+                        </label>
+                    </span>
                 </p>
         
                 <p id="buttonContainer">
