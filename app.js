@@ -68,20 +68,30 @@ phoneInput.addEventListener('input', (e) => {
 
 
 
+// Check special characters
+function hasSpecialCharacter(password) {
+    return /[!@#$%^&*(),.?":{}|<>]/.test(password);
+}
+
 // password check
 
 function formCheck() {
     console.log("checking form");
 
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("confirmPassword");
 
-    const form = document.getElementById("form");
-    form.addEventListener('submit', (e) => {
-        const password = document.getElementById("password");
-        const confirmPassword = docuemnt.getElementById("confirmPassword");
+    console.log(password);
+    console.log(confirmPassword);
 
-        if (password !== confirmPassword) {
-            alert("Passwords do not match &#128169 ")
-        }
-    })
+    if (password !== confirmPassword) {
+        alert("Passwords do not match &#128169 ")
+    }
+
+    if (!hasSpecialCharacter(password)) {
+        alert("password needs one special character")
+    } else {
+        console.log("password valid");
+    }
+    }
     
-}
