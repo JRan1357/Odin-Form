@@ -222,3 +222,12 @@ nav>ul>li{
     background-image: linear-gradient(var(--input-color1), var(--input-color2));
 }
 
+
+#footerLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerLinks > li{
+    margin-right: 40px;
+}
